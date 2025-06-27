@@ -17,11 +17,11 @@ return new class extends Migration
             $table->string('title');
             $table->string('slug')->unique();
             $table->text('description')->nullable();
-            $table->text('ingredients')->nullable()->after('description');
-            $table->integer('cook_minutes')->nullable()->after('main_ingredient_id');
-            $table->integer('servings')->nullable()->after('cook_minutes');
+            $table->text('ingredients')->nullable();
+            $table->integer('cook_minutes')->nullable();
+            $table->integer('servings')->nullable();
 
-            $table->integer('calories')->nullable()->after('servings');
+            $table->integer('calories')->nullable();
             $table->integer('protein')->nullable();
             $table->integer('carbohydrate')->nullable();
             $table->integer('fat')->nullable();
