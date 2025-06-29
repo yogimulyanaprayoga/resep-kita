@@ -21,7 +21,7 @@ WORKDIR /app
 COPY . .
 
 # Install dependencies
-RUN composer install --no-dev --optimize-autoloader --no-interaction
+RUN composer install --no-dev --optimize-autoloader --no-interaction --verbose
 
 # Optional: build Tailwind
 RUN npm install && npm run build
