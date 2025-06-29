@@ -1,8 +1,0 @@
-{
-    "build": {
-        "command": "docker build -t laravel-php80 ."
-    },
-    "deploy": {
-        "command": "docker run -p 8000:8000 laravel-php80"
-    }
-}
